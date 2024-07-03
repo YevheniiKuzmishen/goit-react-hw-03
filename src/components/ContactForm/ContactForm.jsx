@@ -1,7 +1,6 @@
-import { Form, Formik, Field } from "formik";
+import { Form, Formik, Field, ErrorMessage } from "formik";
 import { nanoid } from "nanoid";
 import * as Yup from "yup";
-import { ErrorMessage } from "formik";
 
 export default function ContactForm({ onAdd }) {
   const contactShema = Yup.object().shape({
